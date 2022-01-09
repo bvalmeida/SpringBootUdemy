@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <form action="#" th:action="@{/user}" th:object="${user}" method="post">
+
+        <label>Name:</label>
+        <input type="text" th:field="*{name}" />
+        
+        <label>Email:</label>
+        <input type="text" th:field="*{email}" />
+        
+        <input type="submit" value="Enviar Form"/>
+    </form>
+    
+</body>
+</html>
